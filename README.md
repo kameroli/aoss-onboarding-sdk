@@ -25,9 +25,9 @@ Division of responsibility, in one line: the institution decides and owns the su
 
 ## Documentation
 
-| Document | Contents |
-| --- | --- |
-| [Product Definition and Scope](docs/requirements/01-product-definition-and-scope.md) | Problem statement, personas, v0.1 scope and cut lines, assumptions register, measurable success criteria |
+| Document                                                                                           | Contents                                                                                                                                                    |
+| -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Product Definition and Scope](docs/requirements/01-product-definition-and-scope.md)               | Problem statement, personas, v0.1 scope and cut lines, assumptions register, measurable success criteria                                                    |
 | [Flow Architecture and the State Model](docs/requirements/02-flow-architecture-and-state-model.md) | State machine as adopted by the SDK, status-to-experience mapping, error taxonomy, step graph, sequence diagrams, verified binding to the AOSS API contract |
 
 Further documents (screen specifications, component library, public API surface, non-functional requirements, test plan) will be added as they are completed.
@@ -41,7 +41,7 @@ This is currently a single repository for documentation and both platform implem
 ## Status
 
 - [x] Requirements: product definition and scope
-- [x] Requirements: flow architecture and state model, verified against the AOSS `openapi.yaml` v0.1.0 contract
+- [x] Requirements: flow architecture and state model, verified against the AOSS `openapi.yaml` contract (v0.1.x; verified at 0.1.0, and the 0.1.1 changes are editorial with no contract impact)
 - [ ] Requirements: screen inventory and specifications
 - [ ] Requirements: component library and public API surface
 - [ ] iOS SDK v0.1 (reference implementation, sample host app, simulated middle layer)
@@ -60,7 +60,7 @@ The requirements documents, like the Standard itself, are published for comment.
 
 ## License
 
-Apache-2.0 (proposed), matching the Standard.
+Apache-2.0 — see LICENSE, matching the Standard."
 
 ## Maintainer
 
