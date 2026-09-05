@@ -60,7 +60,7 @@ The requirements documents, like the Standard itself, are published for comment.
 
 ## License
 
-Apache-2.0 — see LICENSE, matching the Standard."
+Apache-2.0 — see LICENSE, matching the Standard.
 
 ## Maintainer
 
