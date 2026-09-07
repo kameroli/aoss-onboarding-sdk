@@ -1,6 +1,6 @@
 # AOSS Onboarding SDK
 
-Native mobile SDKs for digital onboarding in U.S. financial services: configurable, compliance-ready flow components for checking/savings account opening and credit card application intake, built as clients of the [Application Outcome & Status Standard (AOSS)](https://github.com/kameroli/aoss-middle-layer).
+Native mobile SDKs for digital onboarding in U.S. financial services: configurable, compliance-ready flow components for checking/savings account opening and credit card application intake, built as clients of the [Application Outcome & Status Standard (AOSS)](https://github.com/kameroli/aoss).
 
 **Status: specification phase.** This repository currently contains the requirements documentation. The iOS reference implementation is next; Android follows the same specification. See the status table below for exactly what exists today.
 
@@ -8,7 +8,7 @@ Native mobile SDKs for digital onboarding in U.S. financial services: configurab
 
 Institutions rebuild the same onboarding front end again and again: the intake screens, the validation, the disclosure and consent sequencing, the status and decline rendering, the accessibility work, the localization. Each rebuild is bespoke, and each inherits the inconsistent statuses and unexplained outcomes of whatever vendor stack sits behind it.
 
-This SDK is the client-side half of a different approach. The [AOSS middle layer](https://github.com/kameroli/aoss-middle-layer) normalizes vendor and internal decision responses into one canonical contract of statuses, errors, reasons, and next steps. The SDK renders that contract natively on iOS and Android, so an adopting institution configures an onboarding flow instead of building one, and every applicant gets a consistent, resumable, explainable application journey.
+This SDK is the client-side half of a different approach. The [AOSS](https://github.com/kameroli/aoss) normalizes vendor and internal decision responses into one canonical contract of statuses, errors, reasons, and next steps. The SDK renders that contract natively on iOS and Android, so an adopting institution configures an onboarding flow instead of building one, and every applicant gets a consistent, resumable, explainable application journey.
 
 Division of responsibility, in one line: the institution decides and owns the substance of every outcome; the middle layer standardizes the structures and enforces the transparency guarantees; the SDK renders with fidelity. The SDK never authors decision content and never talks to a vendor.
 
@@ -52,7 +52,7 @@ This is currently a single repository for documentation and both platform implem
 
 This SDK targets any AOSS Level 2-conformant backend. The two components are coordinated through the published contract and can be adopted together or independently: an institution can run the reference middle layer with its own front ends, use this SDK against its own implementation of the `openapi.yaml` contract, or adopt both. Conformance to the contract is the SDK's entire backend dependency; it is never coupled to reference-implementation internals.
 
-Design work on the SDK feeds back into the Standard: gaps identified while binding to the contract are filed as issues on the [aoss-middle-layer](https://github.com/kameroli/aoss-middle-layer/issues) repository.
+Design work on the SDK feeds back into the Standard: gaps identified while binding to the contract are filed as issues on the [aoss](https://github.com/kameroli/aoss/issues) repository.
 
 ## Feedback
 
